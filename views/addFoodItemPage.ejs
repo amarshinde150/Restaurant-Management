@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainHeading">
+            <h1>Adding Food Item</h1>
+        </div>
+        <div class="container containerChangePassword" id="container">
+            <div class="loginForm">
+                <form action="/auth/addFoodItem" method="post" enctype="multipart/form-data">
+                    <h1 class="mb-5">Add Food Item</h1>
+                    <input name="name" type="text" placeholder="Item Name"/>
+                    <input name="price" type="text" placeholder="Item price"/>
+                    <div class="makeSpan">
+                        <input style="display: inline-block;" type="radio"  name="type" value="Veg">Veg&nbsp;&nbsp;
+                        <input style="display: inline-block;" type="radio"  name="type" value="Non veg"> Non Veg
+                    </div>
+                    <input name="c_id" type="text" placeholder="Item's category ID"/>
+                    <input type="file" name="myfile" id="myfile">
+                    <button>Add Item</button>
+                </form>
+            </div>
+        </div>
+       
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
